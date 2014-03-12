@@ -1,0 +1,6 @@
+<h1>Projects:</h1>
+<ul>
+    {% for project in projects %}
+        <li><a href="{{ url('project', {'project': project}) }}">{{ project | capitalize }}</a></li>
+    {% endfor %}
+</ul>
